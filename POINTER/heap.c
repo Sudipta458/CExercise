@@ -23,9 +23,9 @@ int main(){
 
     //reverse data
     for(int i = 0; i < n/2; i++){
-       int rem = array[i];
-       array[i] = array[n - i - 1];
-       array[n - i - 1] = rem;  
+       int temp = array[i];
+       array[i] = array[n - (i + 1)];
+       array[n - i - 1] = temp;  
     }   
 
     for(int i = 0; i < n; i++)
